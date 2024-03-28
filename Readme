@@ -1,0 +1,82 @@
+Hard Pitch
+
+Front-end  
+
+components:
+
+App.jsx
+Will have fetch's and  routes
+
+loginPage.jsx
+The user will be able to login into their 
+accounts to access the website and 
+
+SignUpPage.jsx
+User will be able to sign up to view their account
+
+ServicesPage.jsx
+displays the many services of the Therapist
+
+Appointment.jsx
+Where the User can make an appointment
+
+Therapist only 
+UpcomingAppointments.jsx
+therapist can see Upcoming Appointments
+
+HomePage.jsx
+Will display the homepage of the website and help guide the user 
+
+    The front end will consist of CSS, and react 
+
+
+
+Back-end 
+
+models:
+
+class Therapist
+Will have a relationship with patient
+
+attribute :
+contact info
+
+class Patient
+Will have a relationship with therapist
+
+attribute :
+contact info
+
+class session
+a therapist and patient will have both a session
+attributes:
+Id 
+date
+Start Time 
+End Time
+Patient ID
+Therapist Id
+duration
+Created at
+Updated at
+
+class appointment
+a therapist and a patient will both have a appointment
+attributes:
+Id 
+Date
+Time
+Duration(30 minutes, 45 minutes, 1 hour)
+Patient Id 
+Therapist Id
+Status(confirmed, pending, cancelled)
+created at
+updated at
+
+
+
+stretch goals:
+
+
+
+

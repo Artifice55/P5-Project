@@ -1,0 +1,667 @@
+:root {
+  --bg: #282c34;
+  --header: #fff;
+  --link: #61dafb;
+  --text: hsla(0, 0%, 100%, 0.88);
+}
+
+.LoginBody {
+  background-color: white;
+}
+
+.button {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  color:black;
+  cursor: pointer;
+  font-size: 1em;
+  content: center;
+}
+
+.label {
+   display :block;
+   margin: 15px 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav {
+  width: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 70px;
+}
+
+.menu  {
+  display: inline-block;
+  width: 90px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu li:hover .submenu {
+  height: 85px;
+}
+
+.menu > li:hover > a {
+  color: #3e95ff;
+}
+
+.menu > li:hover > a::before {
+  visibility: visible;
+  scale: 1 1;
+}
+
+.submenu {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  background-color: #3e95ff;
+  height: 0;
+  line-height: 40px;
+  box-sizing: border-box;
+  transition: height 0.3s ease-in-out;
+}
+.menu li .submenu a {
+  color: #fff;
+  opacity: 0;
+  font-size: 16px;
+  transition: opacity 0.25s;
+}
+
+.menu > li:hover .submenu a {
+  opacity: 1;
+}
+
+.menu > li .submenu a:hover {
+  background: rgb(0 0 0 / 20%);
+}
+
+.menu > li a {
+  color: black;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  padding: 0 7px;
+  text-decoration: none;
+  position: relative;
+  height: 100%;
+}
+
+.menu > li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 3px;
+  left: 0px;
+  background-color: #3e95ff;
+  transition: all 0.2s ease-in-out;
+  scale: 0 0;
+  visibility: hidden;
+}
+
+@media (width >= 500px) {
+  body {
+    padding: 0;
+  }
+}
+
+.background {
+  position: fixed;
+  top: -50vmin;
+  left: -50vmin;
+  width: 100vmin;
+  height: 100vmin;
+  border-radius: 47% 53% 61% 39% / 45% 51% 49% 55%;
+  background: #ff4dff;
+}
+
+.background::after {
+  content: "";
+  position: inherit;
+  right: -50vmin;
+  bottom: -55vmin;
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  background: #ff4dff;
+}
+
+.centered {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.card {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  width: 94%;
+  margin: 0 20px;
+  padding: 170px 30px 54px;
+  border-radius: 24px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -880px;
+  left: 50%;
+  translate: -50% 0;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background:lightgreen;
+}
+
+@media (width >= 500px) {
+  .card {
+    margin: 0;
+    width: 360px;
+  }
+}
+
+.card .logo {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  translate: -50% 0;
+  width: 100px;
+  height: 64px;
+}
+
+.card > h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 38px;
+  color: rgb(0 0 0 / 38%);
+}
+
+.form {
+  margin: 0 0 44px;
+  display: grid;
+  gap: 12px;
+}
+
+.form :is(input, button) {
+  width: 100%;
+  height: 50px;
+  border-radius: 28px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form > input {
+  border: 0;
+  padding: 0 24px;
+  color: #222222;
+  background: #ededed;
+}
+
+.form > input::placeholder {
+  color: rgb(0 0 0 / 28%);
+}
+
+.form > button {
+  border: 0;
+  color: #f9f9f9;
+  background: #ff4dff;
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.card > footer {
+  color: #a1a1a1;
+}
+
+.card > footer > a {
+  color: #216ce7;
+}
+
+
+.calendar-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.calendar-container h2 {
+  margin-bottom: 10px;
+}
+
+.calendar-container > div > div {
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.calendar-container input[type="text"] {
+  width: calc(100% - 20px);
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.calendar-container input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.calendar-container button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calendar-container button:hover {
+  background-color: #0056b3;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 30px;
+  row-gap: 50px;
+}
+
+.day {
+  width: 100px;
+ }
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer {
+    background: #90EE90;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    text-align: center;
+    max-width: 400px; 
+    max-height: 300;
+    margin: 0 auto; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+
+.label {
+    margin-bottom: 10px; 
+    
+}
+
+.button {
+    background: #ff4dff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background: #ff33cc; 
+}
+/* ############################################################################## */
+
+.SignUpBody {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 0 20px;
+  background: #3284ce;
+  font-family: "Euclid Circular A";
+}
+
+button,
+.input {
+  border: 0;
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+@keyframes clouds {
+  100% {
+    transform: translate(-50vw, -55%) scale(1, 1.1);
+  }
+}
+
+.clouds {
+  position: fixed;
+  top: 30%;
+  left: 0;
+  width: 3000px;
+  height: 1500px;
+  transform: translate(0%, -50%);
+  animation: clouds 15s infinite alternate linear;
+}
+
+.signup {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  
+  width: 70%;
+  max-width: 460px;
+  padding: 200px 90px;
+  background: #111820;
+}
+
+.signup h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0 0 6px;
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.signup h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0 0 30px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.SignUpForm {
+  margin: 0;
+  display: grid;
+  gap: 16px;
+}
+
+.textbox {
+   position: relative; 
+   margin-bottom: 20px;
+  }
+
+
+.textbox .input {
+  padding: 0 24px 0 36px;
+  border-bottom: 2px solid #2b3442;
+  color: rgba(255, 255, 255, 0.96);
+  height: 30px;
+  margin-top: 10px
+}
+
+.input:focus ~ label,
+.input:valid ~ label {
+  transform: translate(-40px, -40px) scale(0.875);
+}
+
+.input:focus ~ label {
+  color: #216ce7;
+}
+
+.input:focus {
+  border-color: #216ce7;
+}
+
+.input:focus ~ span,
+.input:valid ~ span {
+  color: rgba(255, 255, 255, 0.96);
+}
+
+.textbox label {
+  top: 40%;
+  left: 36px;
+  color: rgba(255, 255, 255, 0.4);
+  transition: 0.4s;
+  margin-bottom: 50px;
+}
+
+.SignUpForm button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0 24px;
+  border-radius: 6px;
+  background: #216ce7;
+  color: #f9f9f9;
+  border: 0;
+  font-family: inherit;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.signup p {
+  margin: 0 0 22px;
+  color: #778395;
+}
+
+.signup p > a {
+  color: #216ce7;
+  text-decoration: none;
+}
+
+.SignUpbutton {
+  margin-bottom: 50px;
+}
+
+
+body .react-wavy-transitions__wavy-link {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  height: 70px;
+  display: inline-block;
+  width: 90px;
+  transition: all 0.3s ease-in-out;
+  height: 85px;
+  color: black;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7px;
+  text-decoration: none;
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  width: 90px;
+  transition: all 0.3s ease-in-out;
+}
+
+.h1Title {
+  color: white;
+}
+
+/* Add this CSS to your component or CSS file */
+
+.ScheduleNavBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0%;
+  right: 3%;
+  cursor: pointer;
+  z-index: 4;  
+}
+
+
+.ScheduleNavBar h1 {
+  color: black;
+  margin-right: auto; /* Push the logo to the right */
+}
+
+.ScheduleNavBar img {
+  cursor: pointer;
+}
+
+/* Form container styles */
+.scheduleForm-container {
+  max-width: 400px;
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.scheduleForm-container h2 {
+  text-align: center;
+}
+
+/* Form input styles */
+.scheduleForm-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.scheduleForm-container input[type="text"],
+.scheduleForm-container input[type="date"],
+.scheduleForm-container input[type="time"],
+.scheduleForm-container button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.scheduleForm-container button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.scheduleForm-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 46%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  border-radius: 15px;
+  width: 450px
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.SignUpFooter {
+  color: White;
+}
+
+.Radioinput {
+  vertical-align: baseline;
+}
+
+
+.Servicecard {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  width: 94%;
+  margin: 0 20px;
+  padding: 170px 30px 54px;
+  border-radius: 24px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 100px 100px rgb(0 0 0 / 10%);
+  width: 50em;
+  height:10em;
+}
+
+
+.Servicecard::before {
+  content: "";
+  position: absolute;
+  top: -880px;
+  left: 50%;
+  translate: -50% 0;
+  width: 1000px;
+  height: 1000px;
+  border-radius: 50%;
+  background:lightgreen;
+}
+
+@media (width >= 500px) {
+  .Servicecard {
+    margin: 0;
+    width: 360px;
+  }
+}
+
+.Servicecard > h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 38px;
+  color: rgb(0 0 0 / 38%);
+}
+
