@@ -1,82 +1,11 @@
-Hard Pitch
+Power Through Healing Introduction Welcome to Power Through Healing, a platform designed to provide mental health support and counseling services. My name is Marina Landviger, and I am a licensed psychotherapist committed to helping individuals navigate their mental health journey.
 
-Front-end  
+About Power Through Healing Power Through Healing is an online platform where clients can conveniently access mental health services. Our goal is to create a supportive environment where individuals feel comfortable sharing their thoughts and emotions.
 
-components:
+Services Offered As a licensed psychotherapist, I offer a range of mental health services, including but not limited to:
 
-App.jsx
-Will have fetch's and  routes
+Individual Counseling Relationship Counseling Stress Management Anxiety and Depression Support Self-Esteem Building Goal Setting and Personal Development How It Works Client Registration: To get started, clients can register on the platform by providing their basic information.
 
-loginPage.jsx
-The user will be able to login into their 
-accounts to access the website and 
+Profile Creation: Once registered, clients can create a profile with relevant details about themselves and their mental health concerns.
 
-SignUpPage.jsx
-User will be able to sign up to view their account
-
-ServicesPage.jsx
-displays the many services of the Therapist
-
-Appointment.jsx
-Where the User can make an appointment
-
-Therapist only 
-UpcomingAppointments.jsx
-therapist can see Upcoming Appointments
-
-HomePage.jsx
-Will display the homepage of the website and help guide the user 
-
-    The front end will consist of CSS, and react 
-
-
-
-Back-end 
-
-models:
-
-class Therapist
-Will have a relationship with patient
-
-attribute :
-contact info
-
-class Patient
-Will have a relationship with therapist
-
-attribute :
-contact info
-
-class session
-a therapist and patient will have both a session
-attributes:
-Id 
-date
-Start Time 
-End Time
-Patient ID
-Therapist Id
-duration
-Created at
-Updated at
-
-class appointment
-a therapist and a patient will both have a appointment
-attributes:
-Id 
-Date
-Time
-Duration(30 minutes, 45 minutes, 1 hour)
-Patient Id 
-Therapist Id
-Status(confirmed, pending, cancelled)
-created at
-updated at
-
-
-
-stretch goals:
-
-
-
-
+Session Booking: Clients have the option to book counseling sessions based on their preferences and availability.
